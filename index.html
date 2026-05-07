@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Definindo um título claro e honesto para a página -->
+    <title>Meu Portfólio Pessoal</title>
+    <!-- Importando uma fonte limpa e moderna do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho principal com o seu nome -->
+    <header class="header">
+      <div class="container">
+        <!-- nome no cabeçalho e profissão -->
+        <h1 class="name-title">Portfólio de projetos</h1>
+        <p class="subtitle">Juan Thales - Dev Full Stack  </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Seção de Apresentação -->
+      <section class="section about">
+        <h2>Sobre Mim</h2>
+        <!-- Paragrafo de apresentação -->
+        <p>
+          Olá, meu nome é Juan Thales, tenho 22 anos, moro em campinas-SP e estou aqui para registrar meus projetos.
+        </p>
+      </section>
+
+      <!-- Seção de Formação -->
+      <section class="section education">
+        <h2>Formação</h2>
+        <div class="education-card">
+          <!-- Formações e cursos -->
+          <h3>Curso Técnico em Desenvolvimento de Sistemas</h3>
+          <p>Senac Campinas • 04/2024 - 11/2025</p>
+          
+          <h3>Ensino Médio Completo</h3>
+          <p>Escola Estadual Professora Rita de Cássia da Silva • 2019 - 2021</p>
+        </div>
+      </section>
+
+      <!-- Seção de Projetos -->
+      <section class="section projects">
+        <h2>Meus Projetos</h2>
+        <p class="projects-desc">Aqui estão alguns dos meus trabalhos integrados do GitHub.</p>
+        
+        <!-- Onde os cards dos projetos vão aparecer -->
+        <div id="projects-grid" class="projects-grid">
+          <p class="loading">Carregando projetos...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Juan Thales.</p>
+      </div>
+    </footer>
+
+    <!-- O Vite usa type="module" no script principal -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

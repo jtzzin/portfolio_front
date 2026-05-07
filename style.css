@@ -1,0 +1,194 @@
+/* Reset básico e configurações de variáveis de cor */
+:root {
+  --bg-color: #0f172a;
+  --text-color: #f8fafc;
+  --primary-color: #3b82f6;
+  --secondary-color: #1e293b;
+  --accent-color: #60a5fa;
+  --card-bg: #1e293b;
+  --border-color: #334155;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Estilo do Cabeçalho: Simples e elegante */
+.header {
+  padding: 80px 0 40px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.name-title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: var(--text-color);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-top: 5px;
+}
+
+/* Seções gerais */
+.section {
+  padding: 60px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+/* Texto de placeholder para incentivar a edição depois */
+.placeholder-text {
+  color: #94a3b8;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* Cartões de formação acadêmica */
+.education-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.education-card h3 {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+/* Grade para os projetos */
+.projects-desc {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Cartão de cada projeto */
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.2s, border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.project-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.language-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: inline-block;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botões honestos, sem firulas */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-color);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--secondary-color);
+}
+
+.loading {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Rodapé */
+.footer {
+  padding: 40px 0;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9rem;
+}
