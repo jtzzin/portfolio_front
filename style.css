@@ -34,6 +34,24 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header-contact {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-small {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+}
+
 .name-title {
   font-size: 3rem;
   font-weight: 800;
