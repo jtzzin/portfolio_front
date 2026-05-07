@@ -1,6 +1,6 @@
 // Definimos a URL base do nosso backend. Em desenvolvimento, ele vai rodar na porta 3000.
 // Em produção, isso pode mudar.
-const API_URL = 'http://localhost:3000/api/projects';
+const API_URL = 'https://portfolio-backend-juan.onrender.com/api/projects';
 
 // Colocando o ano atual no rodapé
 document.getElementById('year').textContent = new Date().getFullYear();
