@@ -254,7 +254,9 @@ body {
 }
 
 .btn-outline:hover {
-  background-color: var(--secondary-color);
+  background-color: rgba(59, 130, 246, 0.15);
+  border-color: var(--primary-color);
+  color: var(--accent-color);
 }
 
 .loading {
