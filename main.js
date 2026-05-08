@@ -40,11 +40,11 @@ async function loadProjects() {
           ${project.stars !== undefined ? `<span>⭐ ${project.stars}</span>` : ''}
         </div>
         
+        <!-- Botões de ver codigo, frontend e backend, só aparece se existir -->
         <div class="project-links">
           ${project.deploy_url ? `<a href="${project.deploy_url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Deploy</a>` : ''}
-          ${project.github_url ? `<a href="${project.github_url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Rep Backend</a>` : ''}
-          ${project.github_front_url ? `<a href="${project.github_front_url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Rep Frontend</a>` : ''}
-          ${project.github_back_url ? `<a href="${project.github_back_url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Rep Backend</a>` : ''}
+          ${project.github_front_url ? `<a href="${project.github_front_url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Frontend</a>` : ''}
+          ${project.github_back_url ? `<a href="${project.github_back_url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Backend</a>` : ''}
         </div>
       `;
       
