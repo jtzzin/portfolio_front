@@ -236,6 +236,16 @@ body {
   background-color: var(--accent-color);
 }
 
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #fff;
+  border-color: #25D366;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128C7E;
+}
+
 .btn-outline {
   background-color: transparent;
   color: var(--text-color);

@@ -42,9 +42,9 @@ async function loadProjects() {
         
         <div class="project-links">
           ${project.deploy_url ? `<a href="${project.deploy_url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Deploy</a>` : ''}
-          ${project.github_url ? `<a href="${project.github_url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Ver Código</a>` : ''}
-          ${project.github_front_url ? `<a href="${project.github_front_url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Código Front</a>` : ''}
-          ${project.github_back_url ? `<a href="${project.github_back_url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Código Back</a>` : ''}
+          ${project.github_url ? `<a href="${project.github_url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Código</a>` : ''}
+          ${project.github_front_url ? `<a href="${project.github_front_url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Front</a>` : ''}
+          ${project.github_back_url ? `<a href="${project.github_back_url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Back</a>` : ''}
         </div>
       `;
       
