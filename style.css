@@ -110,6 +110,23 @@ body {
 }
 
 /* Habilidades */
+.skills-category {
+  margin-bottom: 24px;
+}
+
+.skills-category:last-child {
+  margin-bottom: 0;
+}
+
+.skills-category-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
 .skills-tags {
   display: flex;
   flex-wrap: wrap;
